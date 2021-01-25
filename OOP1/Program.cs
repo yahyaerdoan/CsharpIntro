@@ -15,12 +15,29 @@ namespace OOP1
 
             Product product2 = new Product { Id = 2, CategortId = 5, ProductName = "Kalem", UnitPrice = 3, UnitsInStock = 35 };
 
-            ProductManager productManager = new ProductManager();
-            productManager.Add(product1);
-            Console.WriteLine(product1.ProductName);
+            //PascalCase   //camelcase
+            // Sol taraf steak              // Sağ taraf heap
 
+            ProductManager productManager = new ProductManager();
+
+            productManager.Add(product1);
             
-        
+
+            ProductManager productManager1 = new ProductManager();
+
+            productManager1.Add(product2);
+            
+
+            productManager1.ProductDelete(product2);
+
+            productManager1.Update(product2);
+
+
+
+            productManager.Topla2(5, 7);
+
+            int toplamaSonucu = productManager.Topla(5, 7 * 2); // return işlem sürekliliğini sağlar 
+            Console.WriteLine(toplamaSonucu*2);
         
         
         }

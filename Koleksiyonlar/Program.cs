@@ -26,9 +26,12 @@ namespace Koleksiyonlar
             Console.WriteLine(isimler2[3]);
             isimler2.Add("İlker");
             isimler2.Add("Bayram");
+            isimler2.Add("Buse");
             Console.WriteLine(isimler2[5]);
             Console.WriteLine(isimler2[4]);
             Console.WriteLine(isimler2[0]);
+            Console.WriteLine(isimler2[6]);
+
 
 
 
