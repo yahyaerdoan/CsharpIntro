@@ -4,14 +4,11 @@ using System.Text;
 
 namespace Oop3
 {
-    class FileLoggerService : ILoggerService
+    class E_MailLoggerServise : ILoggerService
     {
         public void Log()
         {
-            Console.WriteLine("Dosyaya Loglandı");
+            Console.WriteLine("e-Mail bilgilendirme mesajı gönderildi");
         }
-
-        
     }
 }
-

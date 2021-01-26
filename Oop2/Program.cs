@@ -20,12 +20,22 @@ namespace Oop2
             musteri2.SirketAdi = "Kodlama.io";
             musteri2.VergiNo = "5678901234";
 
-            Musteri musteri3 = new GercekMusteri();
-            Musteri musteri4 = new TuzelMusteri();
+            GercekMusteri musteri3 = new GercekMusteri();
+            musteri3.Id = 3;
+            musteri3.MusteriNo = "4567876";
+            musteri3.Adi = "Emine";
+            musteri3.Soyadi = "Erdoğan";
+            musteri3.TcNo = "45678987656";
+
+            Musteri musteri4 = new GercekMusteri();
+            Musteri musteri5 = new TuzelMusteri();
+           
+
 
             MusteriManager musteriManager = new MusteriManager();
             musteriManager.Ekle(musteri1);
             musteriManager.Ekle(musteri2);
+            musteriManager.Ekle(musteri3);
         }
     }
 }

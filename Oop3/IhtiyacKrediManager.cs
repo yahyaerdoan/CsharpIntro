@@ -13,7 +13,7 @@ namespace Oop3
 
         public void Hesapla()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("İhtiyaç kredisi ödeme planı hesaplandı");
         }
     }
 }

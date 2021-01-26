@@ -4,14 +4,12 @@ using System.Text;
 
 namespace Oop3
 {
-    class FileLoggerService : ILoggerService
+    class SmsLoggerServise : ILoggerService
     {
+       
         public void Log()
         {
-            Console.WriteLine("Dosyaya Loglandı");
+            Console.WriteLine("Sms yollandı");
         }
-
-        
     }
 }
-

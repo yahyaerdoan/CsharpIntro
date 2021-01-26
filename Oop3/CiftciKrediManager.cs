@@ -1,19 +1,19 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Oop3
 {
-    class KonutKrediManager : IKrediManager
+    class CiftciKrediManager : IKrediManager
     {
         public void BiseyYap()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Ne Yapayım?");
         }
 
         public void Hesapla()
         {
-            Console.WriteLine("Konut kredisi ödeme planı hesaplandı");
+            Console.WriteLine("Çiftçi kredisi ödeme planı hesaplandı");
         }
     }
 }

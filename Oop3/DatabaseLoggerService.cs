@@ -10,5 +10,9 @@ namespace Oop3
         {
             Console.WriteLine("Veri Tabanına Loglandı");
         }
+  
     }
+     
+
 }
+
