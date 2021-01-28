@@ -8,18 +8,18 @@ namespace Oop3
         static void Main(string[] args)
         {
             IhtiyacKrediManager ihtiyacKrediManager = new IhtiyacKrediManager();
-            //ihtiyacKrediManager.Hesapla();
+            ihtiyacKrediManager.Hesapla();
 
             TasıtKrediManager tasıtKrediManager = new TasıtKrediManager();
-            //tasıtKrediManager.Hesapla();
+            tasıtKrediManager.Hesapla();
 
             KonutKrediManager konutKrediManager = new KonutKrediManager();
-            //konutKrediManager.Hesapla();
+            konutKrediManager.Hesapla();
 
             IKrediManager ciftciKrediManager = new CiftciKrediManager();
 
             IKrediManager konutKrediManager1 = new KonutKrediManager();  // IKrediManager implemente ollmuş oluyor. bu şekilde de olabiliyor. 
-            //konutKrediManager.Hesapla();
+            konutKrediManager.Hesapla();
 
             ILoggerService databaseLoggerService = new DatabaseLoggerService();
             ILoggerService fileLoggerService = new FileLoggerService();
