@@ -28,13 +28,18 @@ namespace LinqProject
             //GetProductsLinq(products);
             //GetProducts(products);
             //AnyTest(products);
-            //FindTest(products);
+            //FindTest(products); 
             //FindAllTest(products);
             //AscDescTest(products);                        
             //FromSelectMetodu(products);
             //ClassicLinqMetod(products);
+            //NewMethod(products);
+            //JoinMetodu(categories, products);
 
+        }
 
+        private static void JoinMetodu(List<Category> categories, List<Product> products)
+        {
             var result = from p in products
                          join c in categories
                          on p.CategoryId equals c.CategoryId
@@ -45,7 +50,6 @@ namespace LinqProject
             {
                 Console.WriteLine("{1} : {2} : {0}", productDto.ProductName, productDto.CategoryName, productDto.CategoryId);
             }
-
         }
 
         private static void ClassicLinqMetod(List<Product> products)
@@ -102,7 +106,7 @@ namespace LinqProject
         private static void Test(List<Product> products)
         {
             Console.WriteLine("------Algoritmik----------");
-            NewMethod(products);
+            
 
             Console.WriteLine("-----Linq--------");
 
@@ -137,10 +141,12 @@ namespace LinqProject
         }
 
            //Sadece Linq Metodu
-        static List<Product> GetProductsLinq(List<Product> products)
-        {
-           return products.Where(products => products.UnitPrice > 5000).ToList();
-        }
+
+       private static List<Product> GetProductsLinq(List<Product> products)
+       {
+           var result = products.Where(products => products.UnitPrice <19000).ToList();
+           return result;
+       }
     }
 
     class ProductDto //Data Tranformation object
