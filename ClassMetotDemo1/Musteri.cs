@@ -14,9 +14,5 @@ namespace ClassMetotDemo1
         public string Meslek { get; set; }
         public string Cinsiyet { get; set; }
         public int Yas { get; set; }
-
-
-
-
     }
 }

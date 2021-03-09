@@ -49,16 +49,7 @@ namespace ClassMetotDemo
 
                 Console.WriteLine("Bankamıza Hoş Geldiniz: " + musteri.Ad + " " + musteri.Soyad);
                 
-                
-                
-                Console.WriteLine("Hoş Geldin");
             }
-
-
-            Console.WriteLine("Hoş Geldin");
-
-
-
         }
     }
 }

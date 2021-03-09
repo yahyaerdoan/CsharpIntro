@@ -10,9 +10,24 @@ namespace EntityFramaworkDemo
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocalDB;Database=Northwind;Trusted_Connection=true");
-
         }
         public DbSet<Product> products { get; set; }
+
+        public DbSet<Personel> Personels { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.HasDefaultSchema("admin"); // özel şablon olmuş oluyor.
+            modelBuilder.Entity<Personel>().ToTable("Employees"); //personeli eployees tablosuna bağlar
+            //fluent mapping 1. satırın sonunda devam etmektir.
+            modelBuilder.Entity<Personel>().Property(p => p.Id).HasColumnName("EployeeId");
+            modelBuilder.Entity<Personel>().Property(p => p.Name).HasColumnName("FirstName");
+            modelBuilder.Entity<Personel>().Property(p => p.Surname).HasColumnName("LastName");
+        
+        }
+
+
+
 
     }
 

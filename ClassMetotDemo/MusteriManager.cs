@@ -4,11 +4,13 @@ using System.Text;
 
 namespace ClassMetotDemo
 {
-    class MusteriManager 
+    class MusteriManager
     {
-        public void MusteriEkle (Musteri musteri) 
+        public void MusteriEkle(Musteri musteri)
         {
-            Console.WriteLine("Bankamıza Hoş Geldiniz: " " + musteri.Ad);        
+            Console.WriteLine("Bankamıza Hoşgeldiniz :" + musteri.Ad + " " + musteri.Soyad); 
         }
 
-    }      
+    }
+
+}     

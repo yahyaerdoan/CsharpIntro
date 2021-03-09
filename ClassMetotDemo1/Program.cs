@@ -76,26 +76,19 @@ namespace ClassMetotDemo1
             musteri7.Ulke = "Türkiye";
             musteri7.Cinsiyet = "Erkek";
             
-            
-
-            
-
-
             Musteri[] musteriler = new Musteri[] { musteri1, musteri2, musteri3, musteri4, musteri5, musteri6, musteri7};
             foreach (Musteri musteri in musteriler)
             {
-                //Console.WriteLine(musteri.Id);
-                //Console.WriteLine(musteri.Ad);
-                //Console.WriteLine(musteri.Soyad);
-                //Console.WriteLine(musteri.Meslek);
-                //Console.WriteLine(musteri.Yas);
-                //Console.WriteLine(musteri.Sehir);
-                //Console.WriteLine(musteri.Ulke);
-                //Console.WriteLine("--------------------");
+                Console.WriteLine(musteri.Id);
+                Console.WriteLine(musteri.Ad);
+                Console.WriteLine(musteri.Soyad);
+                Console.WriteLine(musteri.Meslek);
+                Console.WriteLine(musteri.Yas);
+                Console.WriteLine(musteri.Sehir);
+                Console.WriteLine(musteri.Ulke);
+                Console.WriteLine("--------------------");
 
-                ////Console.WriteLine(musteri.Ad + " " + musteri.Soyad);
-
-
+                Console.WriteLine(musteri.Ad + " " + musteri.Soyad);
             }
 
             MusteriManager musteriManager = new MusteriManager();
@@ -144,14 +137,6 @@ namespace ClassMetotDemo1
             musteriManager.MusteriSil(musteri6);
             Console.WriteLine("\n");
             musteriManager.MusteriSil(musteri7);
-
-
-
-
-
-
-
-
         }
     }
 }

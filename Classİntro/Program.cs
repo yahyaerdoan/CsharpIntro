@@ -28,19 +28,19 @@ namespace Classİntro
             kurs3.Egitmen = "Murat Bilgin";
             kurs3.IzlenmeOrani = 95;
             kurs3.Degerlendirme = 96;
-            kurs3.Sonuc ="Harika";
+            kurs3.Sonuc = "Harika";
 
             Kurs kurs4 = new Kurs();
             kurs4.KursAdi = "HTML";
             kurs4.Egitmen = "Yusuf Pak";
             kurs4.IzlenmeOrani = 99;
             kurs4.Degerlendirme = 5;
-            kurs4.Sonuc ="Başarılı";
+            kurs4.Sonuc = "Başarılı";
 
 
 
             //Console.WriteLine(kurs1.KursAdi + " : " + kurs1.Egitmen);
-            Kurs[] kurslar = new Kurs[] {kurs1, kurs2, kurs3, kurs4 };
+            Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3, kurs4 };
 
             foreach (var kurs in kurslar)
             {
@@ -49,14 +49,15 @@ namespace Classİntro
             Console.WriteLine("KURSUMUZA HOŞ GELDİN!");
         }
     }
-    class Kurs
-    {
-        public string KursAdi { get; set; }
-        public string Egitmen { get; set; }
-        public int IzlenmeOrani { get; set; }
-        public int Degerlendirme { get; set; }
-        public string Sonuc { get; set; }
-
+}
+class Kurs
+{
+    public string KursAdi { get; set; }
+    public string Egitmen { get; set; }
+    public int IzlenmeOrani { get; set; }
+    public int Degerlendirme { get; set; }
+    public string Sonuc { get; set; }
+}
 
 
 
